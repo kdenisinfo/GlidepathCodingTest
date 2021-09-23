@@ -2,11 +2,11 @@
 
 namespace GlidepathCodingChallengeConsole.Numbers
 {
-    public class EntryingNumber : IEntryingNumber
+    public class EnteringNumber : IEnteringNumber
     {
         public int Number { get; private set; }
 
-        public EntryingNumber(string number) {
+        public EnteringNumber(string number) {
             this.Number = Int32.Parse(number); // use try parse later
          }
     }

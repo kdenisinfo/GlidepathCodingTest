@@ -1,6 +1,6 @@
 ﻿namespace GlidepathCodingChallengeConsole.Numbers
 {
-    public interface IEntryingNumber
+    public interface IEnteringNumber
     {
         int Number { get; }
     }

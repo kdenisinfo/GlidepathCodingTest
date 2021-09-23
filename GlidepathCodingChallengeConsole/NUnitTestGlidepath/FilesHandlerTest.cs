@@ -1,18 +1,22 @@
+using GlidepathCodingChallengeConsole.Numbers;
 using NUnit.Framework;
 
 namespace Tests
 {
-    public class Tests
+    public class FilesHandlerTest
     {
         [SetUp]
         public void Setup()
         {
         }
 
+
         [Test]
-        public void Test1()
+        public void TestPass()
         {
+            //Assert
             Assert.Pass();
         }
+
     }
 }

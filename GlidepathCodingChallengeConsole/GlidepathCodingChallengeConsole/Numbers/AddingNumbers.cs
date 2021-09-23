@@ -4,8 +4,8 @@ namespace GlidepathCodingChallengeConsole.Numbers
 {
     public class AddingNumbers : IAddingNumbers
     {
-        private int NumberOne { get; set; }
-        private int NumberTwo { get; set; }
+        public int NumberOne { get; private set; }
+        public int NumberTwo { get; private set; }
         public int TotalNumber { get; private set; }
 
         public AddingNumbers(int numberone, int numbertwo)

@@ -10,13 +10,13 @@ namespace GlidepathCodingChallengeConsole
 
         static void Main(string[] args)
         {
-            var entryline =  Console.ReadLine();
+            var enterline =  Console.ReadLine();
 
-            var readerWriter = new ReaderAndWriterToDisk(filepath, @"./");
-            var entrying = new EntryingNumber(entryline);
+            var readerWriter = new FilesHandler(filepath, @"./");
+            var entering = new EnteringNumber(enterline);
             var numberPrevious = readerWriter.ParsePrevious();
 
-            var addingNumbers = new AddingNumbers(entrying.Number, numberPrevious);
+            var addingNumbers = new AddingNumbers(entering.Number, numberPrevious);
             readerWriter.AppendLast(addingNumbers.TotalNumber);
 
             addingNumbers.DisplayingNumber();
