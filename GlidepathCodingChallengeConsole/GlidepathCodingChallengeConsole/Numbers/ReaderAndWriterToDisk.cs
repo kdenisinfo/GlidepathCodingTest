@@ -3,12 +3,12 @@ using System.IO;
 
 namespace GlidepathCodingChallengeConsole.Numbers
 {
-    public class ReadAndWriteToDisk : IReadAndWriteToDisk
+    public class ReaderAndWriterToDisk : IReaderAndWriterToDisk
     {
         private string fileName { get; set; }
         private string fileLocation { get; set; }
 
-        public ReadAndWriteToDisk(string filename, string filelocation)
+        public ReaderAndWriterToDisk(string filename, string filelocation)
         {
             this.fileName = filename;
             this.fileLocation = filelocation;

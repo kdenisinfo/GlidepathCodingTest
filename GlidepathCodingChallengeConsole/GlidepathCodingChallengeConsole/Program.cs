@@ -12,12 +12,12 @@ namespace GlidepathCodingChallengeConsole
         {
             var entryline =  Console.ReadLine();
 
-            var readAWrite = new ReadAndWriteToDisk(filepath, @"./");
+            var readerWriter = new ReaderAndWriterToDisk(filepath, @"./");
             var entrying = new EntryingNumber(entryline);
-            var numberPrevious = readAWrite.ParsePrevious();
+            var numberPrevious = readerWriter.ParsePrevious();
 
             var addingNumbers = new AddingNumbers(entrying.Number, numberPrevious);
-            readAWrite.AppendLast(addingNumbers.TotalNumber);
+            readerWriter.AppendLast(addingNumbers.TotalNumber);
 
             addingNumbers.DisplayingNumber();
 

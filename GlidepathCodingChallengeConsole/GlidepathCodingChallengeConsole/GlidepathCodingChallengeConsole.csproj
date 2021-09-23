@@ -47,10 +47,10 @@
     <Compile Include="Numbers\EntryingNumber.cs" />
     <Compile Include="Numbers\IAddingNumbers.cs" />
     <Compile Include="Numbers\IEntryingNumber.cs" />
-    <Compile Include="Numbers\IReadAndWriteToDisk.cs" />
+    <Compile Include="Numbers\IReaderAndWriterToDisk.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Numbers\ReadAndWriteToDisk.cs" />
+    <Compile Include="Numbers\ReaderAndWriterToDisk.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

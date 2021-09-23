@@ -1,6 +1,6 @@
 ﻿namespace GlidepathCodingChallengeConsole.Numbers
 {
-    public interface IReadAndWriteToDisk
+    public interface IReaderAndWriterToDisk
     {
         int ParseLast();
         int ParsePrevious();
