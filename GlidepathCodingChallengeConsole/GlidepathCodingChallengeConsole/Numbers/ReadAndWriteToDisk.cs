@@ -3,13 +3,19 @@
     public class ReadAndWriteToDisk : IReadAndWriteToDisk
     {
         private string fileName { get; set; }
-        private string FileLocationAtDisk { get; set; }
+        private string fileLocation { get; set; }
 
-        public ReadAndWriteToDisk(string filename) { this.fileName = fileName; }
-
-        public int Read() {// read from the dissk 
+        public ReadAndWriteToDisk(string filename, string filelocation)
+        {
+            this.fileName = fileName;
+            this.fileLocation = filelocation;
         }
-        public bool Write(int number) { // write to the disk  
+
+        public int Read() {
+            // read from the dissk 
+        }
+        public bool Write(int number) { 
+            // write to the disk  
         }
     }
 
