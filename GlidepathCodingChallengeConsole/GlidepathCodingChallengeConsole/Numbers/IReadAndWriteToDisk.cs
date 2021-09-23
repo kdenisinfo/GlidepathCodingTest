@@ -2,7 +2,8 @@
 {
     public interface IReadAndWriteToDisk
     {
-        int Read();
-        bool Write(int number);
+        int ParseLast();
+        int ParsePrevious();
+        bool AppendLast(int number);
     }
 }

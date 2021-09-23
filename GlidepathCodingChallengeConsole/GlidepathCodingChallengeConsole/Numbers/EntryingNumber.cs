@@ -6,13 +6,8 @@ namespace GlidepathCodingChallengeConsole.Numbers
     {
         public int Number { get; private set; }
 
-        public EntryingNumber(string[] args) {
-            this.Number = Int32.Parse(args[0]);
-        }
+        public EntryingNumber(string number) {
+            this.Number = Int32.Parse(number); // use try parse later
+         }
     }
-
-    //public class DisplayingNumber {
-    //    private int totalnumber { get; set; }
-
-    //    public DisplayingNumber(int totalnumber) { this.totalnumber = totalnumber; }
-    }
+}
