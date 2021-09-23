@@ -36,7 +36,7 @@ namespace GlidepathCodingChallengeConsole.Numbers
             using (FileStream fs = new FileStream(fileName, FileMode.Append, FileAccess.Write))
             using (StreamWriter sw = new StreamWriter(fs))
             {
-                sw.WriteLine("\n");
+                //sw.WriteLine('\n');
                 sw.WriteLine(number);
 
                 resultcode = true;

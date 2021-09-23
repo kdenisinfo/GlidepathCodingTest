@@ -17,7 +17,6 @@ namespace GlidepathCodingChallengeConsole
             var numberPrevious = readAWrite.ParsePrevious();
 
             var addingNumbers = new AddingNumbers(entrying.Number, numberPrevious);
-
             readAWrite.AppendLast(addingNumbers.TotalNumber);
 
             addingNumbers.DisplayingNumber();
