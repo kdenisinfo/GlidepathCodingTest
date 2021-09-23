@@ -10,7 +10,8 @@ namespace GlidepathCodingChallengeConsole
     {
         static void Main(string[] args)
         {
-            string v = null; 
+            string v = null;
+            string v1 = "" ; 
         }
     }
 }
