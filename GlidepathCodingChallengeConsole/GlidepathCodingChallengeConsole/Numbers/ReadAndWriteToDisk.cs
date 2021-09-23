@@ -18,9 +18,4 @@
             // write to the disk  
         }
     }
-
-    //public class DisplayingNumber {
-    //    private int totalnumber { get; set; }
-
-    //    public DisplayingNumber(int totalnumber) { this.totalnumber = totalnumber; }
-    }
+}
