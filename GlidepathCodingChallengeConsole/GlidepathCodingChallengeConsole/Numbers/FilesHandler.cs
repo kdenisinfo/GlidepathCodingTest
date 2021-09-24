@@ -5,25 +5,30 @@ namespace GlidepathCodingChallengeConsole.Numbers
 {
     public class FilesHandler : IFilesHadler
     {
-        public string filename { get; private set; }
-        public string filepath { get; private  set; }
+        public string FileName { get; private set; }
+        public string FilePath { get; private  set; }
+        public string FullPathName { get; private set; }
 
-        public FilesHandler(string filename, string filelocation)
+        public FilesHandler(string name, string path)
         {
-            this.filename = filename;
-            this.filepath = filelocation;
+            // both must be provided 
+            if (name.Equals("") || path.Equals("")) return; 
+
+            this.FileName = name;
+            this.FilePath = path;
+            this.FullPathName = String.Format("{1}{0}", FileName, FilePath);
         }
 
         public int ParseLast()
         {
-            var texts = File.ReadAllLines(filename);
+            var texts = File.ReadAllLines(this.FullPathName);
             var id = Convert.ToInt32(texts[texts.Length - 1]);
             return id;
         }
 
         public int ParsePrevious()
         {
-            var texts = File.ReadAllLines(filename);
+            var texts = File.ReadAllLines(this.FullPathName);
             int? id = Convert.ToInt32(texts[texts.Length - 2]);
             if (id == null)
                 id = 0;
@@ -33,12 +38,10 @@ namespace GlidepathCodingChallengeConsole.Numbers
         public bool AppendLast(int number) {
             // write to the disk  
             var resultcode = false;
-            using (FileStream fs = new FileStream(filename, FileMode.Append, FileAccess.Write))
+            using (FileStream fs = new FileStream(this.FullPathName, FileMode.Append, FileAccess.Write))
             using (StreamWriter sw = new StreamWriter(fs))
             {
-                //sw.WriteLine('\n');
                 sw.WriteLine(number);
-
                 resultcode = true;
             }
 
